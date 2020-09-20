@@ -1,4 +1,13 @@
+:root {
+  --tsa-brand-blue: #056CF2;
+  --tsa-brand-red: #F23847;
+  --portal-gray: #F0F2F5;
+  --portal-primary-text-color: #313131;
+}
+
 body {
+  background: var(--portal-gray);
+  color: var(--portal-primary-text-color);
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
