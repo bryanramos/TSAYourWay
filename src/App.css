@@ -3,3 +3,29 @@
     flex-direction: column;
     min-height: 100vh;
 }
+
+.site-header {
+    max-width: var(--portal-bounds);
+    margin: 0 auto;
+    padding: 20px var(--container-horizontal-padding);
+    width: 100%;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+.content {
+    max-width: var(--portal-bounds);
+    margin: 0 auto;
+    padding: 0 var(--container-horizontal-padding);
+    width: 100%;
+}
+
+.site-footer {
+    max-width: var(--portal-bounds);
+    margin: 0 auto;
+    padding: 40px var(--container-horizontal-padding);
+    font-size: 0.95rem;
+    width: 100%;
+}
