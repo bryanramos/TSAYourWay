@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
 :root {
   --tsa-brand-blue: #056CF2;
+  --tsa-brand-alternate-blue: #DEECFF;
   --tsa-brand-red: #F23847;
   --portal-gray: #F0F2F5;
   --portal-primary-text-color: #313131;
-  --portal-bounds: 1200px;
+  --portal-bounds: 1100px;
   --container-horizontal-padding: 12px;
   font-size: 17px;
 }
@@ -13,11 +16,15 @@ body {
   color: var(--portal-primary-text-color);
   font-size: 1rem;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    sans-serif !Important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  font-weight: bold !Important;
 }
 
 code {

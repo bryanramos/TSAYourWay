@@ -1,14 +1,24 @@
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css');
+
 .tsa-your-way-2020 {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
 .site-header {
+    background: #fff;
+    display: block;
+}
+
+.bounds {
     max-width: var(--portal-bounds);
     margin: 0 auto;
     padding: 20px var(--container-horizontal-padding);
-    width: 100%;
 }
 
 .content {
@@ -18,14 +28,219 @@
 .content {
     max-width: var(--portal-bounds);
     margin: 0 auto;
-    padding: 0 var(--container-horizontal-padding);
+    padding: 20px var(--container-horizontal-padding);
     width: 100%;
+}
+
+
+.ais-Hits-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 1fr;
+}
+
+@media screen and (min-width: 600px) {
+    .ais-Hits-list {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.ais-Hits-item {
+    background: #fff;
+    border-radius: 4px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 3px 29px rgba(0, 0, 0, .05);
+}
+
+.catalog-card-body {
+    flex: 1 0 auto;
+}
+
+.catalog-card-body h3 {
+    margin: 0.53rem 0;
+}
+
+.tsa-badge {
+    background: #EEEEEE;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    border-radius: 4px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.event-attributes {
+    list-style: none;
+    margin: 20px 0;
+    padding: 0;
+    font-size: 0.9rem;
+}
+
+.event-attributes li {
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.event-attributes li:last-child {
+    margin-right: 0px;
+}
+
+.card-action {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 8px;
+    margin-top: 10px;
+}
+
+.card-action > a {
+    text-align: center;
+    transition: all 0.4s ease-in-out;
+}
+
+.accent-button {
+    background: var(--tsa-brand-blue);
+    color: #fff;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.accent-button:hover, .accent-button:focus {
+    background: var(--tsa-brand-alternate-blue);
+    color: var(--tsa-brand-blue);
+}
+
+.submit-button {
+    background: var(--tsa-brand-alternate-blue);
+    color: var(--tsa-brand-blue);
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.submit-button:hover, .submit-button:focus {
+    background: var(--tsa-brand-blue);
+    color: #fff;
 }
 
 .site-footer {
     max-width: var(--portal-bounds);
     margin: 0 auto;
-    padding: 40px var(--container-horizontal-padding);
+    padding: 20px var(--container-horizontal-padding);
     font-size: 0.95rem;
     width: 100%;
+}
+
+.ais-Hits {
+    margin-top: 20px;
+}
+
+/* event profile */
+
+.event-profile-grid {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    grid-gap: 36px;
+    margin-top: 24px;
+}
+
+.profile-card {
+    background: #fff;
+    border-radius: 4px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 3px 29px rgba(0, 0, 0, .05);
+}
+
+
+
+.event-profile-attributes {
+    list-style: none;
+    padding: 20px 0 0 0;
+    margin-top: 30px;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+  }
+
+  .event-title {
+    font-size: 1.8rem;
+    margin: 0.53em 0 0.42rem 0;
+}
+
+.go-back {
+    background: var(--tsa-brand-blue);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    color: #fff;
+    padding: 10px 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.go-back:hover, .go-back:focus {
+    background: var(--tsa-brand-alternate-blue);
+    color: var(--tsa-brand-blue);
+}
+
+.go-back span {
+    margin-left: 7.5px;
+}
+
+.event-alert {
+    background: var(--tsa-brand-red);
+    padding: 15px;
+    color: #fff;
+    box-shadow: 0px 3px 29px rgba(0, 0, 0, .05);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.alert-glyphicon {
+    display: flex;
+    margin-right: 12px;
+  }
+  .search {
+    margin: 30px 0;
+  }
+  .ais-SearchBox-form {
+      position: relative;
+      height: 48px;
+      background: #eee;
+  }
+.ais-SearchBox-input {
+    padding: 5px 5px 5px 52px;
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: none;
+}
+.ais-SearchBox-submit {
+    height: 48px;
+    width: 48px;
+    position: absolute;
+    left: 0;
+    background: none;
+    border: none;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.ais-SearchBox {
+    flex: 1 0 auto;
 }

@@ -12,13 +12,15 @@ export default class Header extends React.Component<HeaderProps, HeaderState> {
     render() {
         return (
             <header className="site-header" role="banner">
-                <Link
-                    to={this.props.rootPage}
-                    className="branding"
-                    title={this.props.appName}
-                    rel="home">
-                    TSA Your Way
-                </Link>
+                <div className="bounds">
+                    <Link
+                        to={this.props.rootPage}
+                        className="branding"
+                        title={this.props.appName}
+                        rel="home">
+                        {this.props.appName}
+                    </Link>
+                </div>
             </header>
         )
     }

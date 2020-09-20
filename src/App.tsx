@@ -25,7 +25,7 @@ export default function App() {
                 <div className="content">
                     <Switch>
                         <Route path={Constants.RootPage} component={Portal} exact />
-                        <Route path={Constants.EventPage} component={Event} />
+                        <Route path={Constants.EventPage} component={Event} rootPage={Constants.RootPage} />
                         <Redirect from={Constants.EventPath} to={Constants.RootPage} />
                         <Route component={NotFound} />
                     </Switch>
